@@ -4,11 +4,12 @@ from Box import Box
 from Button import Button
 from ColorPicker import ColorPicker
 
-system = Component('system')
+sys = Component('system')
 
-app = system.attach(Component('app'))
+app = sys.attach(Component('app'))
 app.attach(Application('main'))
 app.attach(Box('box1'))
+app.attach(Box('box2'))
 app.attach(Button('button'))
 app.attach(ColorPicker('color picker'))
 
